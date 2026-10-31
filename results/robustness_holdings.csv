@@ -1,0 +1,9 @@
+test,window,part,net_wan,ann_on_S_pct,avg_used_wan,ann_on_used_pct,coins_removed
+base,1y,full,1429.95,20.43,1860.33,76.87,0
+halves,1y,first half,1021.77,29.19,2499.37,81.76,0
+halves,1y,second half,408.18,11.66,1221.29,66.84,0
+ex_top5,1y,full,1039.17,14.85,1745.68,59.53,5
+ex_top10,1y,full,791.34,11.3,1358.12,58.27,10
+base,6m,full,401.74,11.64,950.44,85.71,0
+ex_top5,6m,full,180.85,5.24,888.05,41.3,5
+ex_top10,6m,full,131.22,3.8,851.06,31.27,10

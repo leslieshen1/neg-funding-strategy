@@ -1,0 +1,51 @@
+window,step,ann_on_S_pct,delta_pp,net_wan,avg_used_wan,episodes,fills,coin_hours_over_vol_cap,coin_hours_over_oi_cap,coin_hours_held,fills_over_prior_pov,residual_end_wan,funding_events_no_mark
+1y,0 20d9522 (v7 engine),17.99,,1259.52,1359.97,1962.0,114495.0,49477.0,4657.0,594689.0,35887.0,0.0,0.0
+1y,1 exit/derisk decision uses previous-hour close (no same-hour close look-ahead),17.99,-0.0,1259.4,1359.27,1962.0,114540.0,49538.0,4663.0,592445.0,35909.0,0.0,0.0
+1y,2 funding valued at markPrice at settlement,17.94,-0.05,1256.06,1316.74,1962.0,114500.0,49543.0,4663.0,591951.0,35881.0,0.0,390.0
+1y,3 ONE shared participation budget per coin-hour (entry+add+exit+derisk),17.95,0.01,1256.46,1316.83,1961.0,114466.0,49496.0,4662.0,593403.0,35881.0,0.0,390.0
+1y,4 budget & depth from the PRIOR hour's volume,17.71,-0.24,1239.69,1365.61,1966.0,120199.0,56170.0,4860.0,590735.0,32.0,0.0,402.0
+1y,5 10% volume / 10% OI as hard caps (OI on perp notional),19.59,1.88,1371.04,1368.11,1968.0,119592.0,38008.0,181.0,590708.0,32.0,0.0,402.0
+1y,6 window-end / timeout exits obey participation; missing bar defers,19.56,-0.03,1369.09,1367.54,1968.0,119762.0,37978.0,181.0,590217.0,0.0,9.71,402.0
+1y,7 exit PnL state after partial derisk (whole episode),20.43,0.87,1429.95,1927.86,1477.0,129347.0,45541.0,242.0,891069.0,0.0,9.71,576.0
+1y,8 capital use reported at mark-to-market (no PnL effect),20.43,0.0,1429.95,1860.33,1477.0,129347.0,45541.0,242.0,891069.0,0.0,9.71,576.0
+1y,[alone] 1 exit/derisk decision uses previous-hour close (no same-hour close look-ahead),17.99,-0.0,,,,,,,,,,
+1y,[leave-one-out: headline minus this fix = fix contribution] 1 exit/derisk decision uses previous-hour close (no same-hour close look-ahead),18.46,1.97,,,,,,,,,,
+1y,[alone] 2 funding valued at markPrice at settlement,17.97,-0.02,,,,,,,,,,
+1y,[leave-one-out: headline minus this fix = fix contribution] 2 funding valued at markPrice at settlement,20.22,0.21,,,,,,,,,,
+1y,[alone] 3 ONE shared participation budget per coin-hour (entry+add+exit+derisk),18.0,0.0,,,,,,,,,,
+1y,[leave-one-out: headline minus this fix = fix contribution] 3 ONE shared participation budget per coin-hour (entry+add+exit+derisk),20.43,-0.01,,,,,,,,,,
+1y,[alone] 4 budget & depth from the PRIOR hour's volume,17.52,-0.47,,,,,,,,,,
+1y,[leave-one-out: headline minus this fix = fix contribution] 4 budget & depth from the PRIOR hour's volume,21.02,-0.59,,,,,,,,,,
+1y,[alone] 5 10% volume / 10% OI as hard caps (OI on perp notional),17.92,-0.07,,,,,,,,,,
+1y,[leave-one-out: headline minus this fix = fix contribution] 5 10% volume / 10% OI as hard caps (OI on perp notional),18.57,1.86,,,,,,,,,,
+1y,[alone] 6 window-end / timeout exits obey participation; missing bar defers,17.96,-0.03,,,,,,,,,,
+1y,[leave-one-out: headline minus this fix = fix contribution] 6 window-end / timeout exits obey participation; missing bar defers,20.46,-0.03,,,,,,,,,,
+1y,[alone] 7 exit PnL state after partial derisk (whole episode),18.84,0.85,,,,,,,,,,
+1y,[leave-one-out: headline minus this fix = fix contribution] 7 exit PnL state after partial derisk (whole episode),19.56,0.87,,,,,,,,,,
+1y,[alone] 8 capital use reported at mark-to-market (no PnL effect),17.99,0.0,,,,,,,,,,
+1y,[leave-one-out: headline minus this fix = fix contribution] 8 capital use reported at mark-to-market (no PnL effect),20.43,0.0,,,,,,,,,,
+6m,0 20d9522 (v7 engine),10.46,,361.13,668.58,691.0,36143.0,15313.0,1630.0,176481.0,11272.0,0.0,0.0
+6m,1 exit/derisk decision uses previous-hour close (no same-hour close look-ahead),10.45,-0.01,360.8,667.4,688.0,36129.0,15322.0,1631.0,174631.0,11263.0,0.0,0.0
+6m,2 funding valued at markPrice at settlement,10.62,0.17,366.62,666.11,688.0,36115.0,15304.0,1631.0,174572.0,11259.0,0.0,372.0
+6m,3 ONE shared participation budget per coin-hour (entry+add+exit+derisk),10.63,0.01,366.91,666.03,688.0,36123.0,15304.0,1631.0,174572.0,11263.0,0.0,372.0
+6m,4 budget & depth from the PRIOR hour's volume,10.42,-0.2,359.85,672.44,687.0,37691.0,17336.0,1678.0,174727.0,32.0,0.0,390.0
+6m,5 10% volume / 10% OI as hard caps (OI on perp notional),11.26,0.83,388.62,672.9,687.0,37441.0,11951.0,120.0,174597.0,32.0,0.0,390.0
+6m,6 window-end / timeout exits obey participation; missing bar defers,11.2,-0.06,386.67,671.75,687.0,37611.0,11921.0,120.0,174106.0,0.0,9.71,390.0
+6m,7 exit PnL state after partial derisk (whole episode),11.64,0.44,401.74,945.42,602.0,41101.0,14179.0,155.0,247549.0,0.0,9.71,489.0
+6m,8 capital use reported at mark-to-market (no PnL effect),11.64,0.0,401.74,950.44,602.0,41101.0,14179.0,155.0,247549.0,0.0,9.71,489.0
+6m,[alone] 1 exit/derisk decision uses previous-hour close (no same-hour close look-ahead),10.45,-0.01,,,,,,,,,,
+6m,[leave-one-out: headline minus this fix = fix contribution] 1 exit/derisk decision uses previous-hour close (no same-hour close look-ahead),10.94,0.7,,,,,,,,,,
+6m,[alone] 2 funding valued at markPrice at settlement,10.63,0.17,,,,,,,,,,
+6m,[leave-one-out: headline minus this fix = fix contribution] 2 funding valued at markPrice at settlement,11.47,0.17,,,,,,,,,,
+6m,[alone] 3 ONE shared participation budget per coin-hour (entry+add+exit+derisk),10.47,0.01,,,,,,,,,,
+6m,[leave-one-out: headline minus this fix = fix contribution] 3 ONE shared participation budget per coin-hour (entry+add+exit+derisk),11.65,-0.01,,,,,,,,,,
+6m,[alone] 4 budget & depth from the PRIOR hour's volume,10.29,-0.17,,,,,,,,,,
+6m,[leave-one-out: headline minus this fix = fix contribution] 4 budget & depth from the PRIOR hour's volume,11.86,-0.22,,,,,,,,,,
+6m,[alone] 5 10% volume / 10% OI as hard caps (OI on perp notional),10.61,0.14,,,,,,,,,,
+6m,[leave-one-out: headline minus this fix = fix contribution] 5 10% volume / 10% OI as hard caps (OI on perp notional),10.79,0.85,,,,,,,,,,
+6m,[alone] 6 window-end / timeout exits obey participation; missing bar defers,10.4,-0.06,,,,,,,,,,
+6m,[leave-one-out: headline minus this fix = fix contribution] 6 window-end / timeout exits obey participation; missing bar defers,11.7,-0.06,,,,,,,,,,
+6m,[alone] 7 exit PnL state after partial derisk (whole episode),10.85,0.39,,,,,,,,,,
+6m,[leave-one-out: headline minus this fix = fix contribution] 7 exit PnL state after partial derisk (whole episode),11.2,0.44,,,,,,,,,,
+6m,[alone] 8 capital use reported at mark-to-market (no PnL effect),10.46,0.0,,,,,,,,,,
+6m,[leave-one-out: headline minus this fix = fix contribution] 8 capital use reported at mark-to-market (no PnL effect),11.64,0.0,,,,,,,,,,

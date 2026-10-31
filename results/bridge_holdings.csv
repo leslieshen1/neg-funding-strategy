@@ -1,0 +1,11 @@
+step,note,ann_no_idle_pct,ann_idle5_pct,net_wan,avg_used_wan,delta_no_idle_pp
+0 old rules replicated,"same-day volume, full-sample median OI, no de-risk, 10bp, -38bp basis filter, funding x0.8, median funding interval",15.19,19.7,1063.6,684.0,
+1 per-event funding interval,interval per event instead of one median,15.18,19.69,1062.7,688.0,-0.01
+2 remove funding x0.8,raw realised funding,18.86,23.37,1320.4,688.0,3.68
+"3 causal volume (t-1 trailing 24h), dv==0 = no room","entry/add only, as before",18.86,23.37,1320.0,689.0,0.0
+4 + de-risk while holding (volume),sell down when position > 10% of trailing volume,17.73,22.38,1241.1,494.0,-1.13
+"5 OI: full-sample median -> previous-day OI, enforced while holding",,21.2,25.78,1483.8,583.0,3.47
+6 impact 10bp -> 20bp,,18.38,22.92,1286.3,643.0,-2.82
+"7 drop the -38bp basis filter  (= v4 base, daily OI)",idle yield column is sensitivity only,13.58,17.65,950.9,1313.0,-4.8
+"8 OI: previous-UTC-day -> previous completed hour  (= v7 base, 20d9522)","hourly 5-min-snapshot OI, last snapshot of hour t-1, checked every hour at entry and while holding",17.99,22.02,1259.5,1360.0,4.41
+9 v8 engine fixes (see waterfall_*.csv for the split)  (= NEW BASE),"exit lag, markPrice funding, shared prior-hour budget, hard caps, exit POV, exit state; k=0",20.43,24.1,1430.0,1860.0,2.44

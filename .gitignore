@@ -1,0 +1,12 @@
+holdings_cap.csv
+holdings_cap*.csv
+my_cap*.csv
+*.xlsx
+data/
+out/
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.log
+holdings_qty*.csv

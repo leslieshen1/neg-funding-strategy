@@ -1,0 +1,67 @@
+group,case,window,net_wan,funding_wan,basis_gross_wan,spread_impact_wan,fees_wan,ann_on_S_pct,ann_on_used_pct,avg_used_wan,episodes,sens_idle5_ann_on_S_pct
+base,BASE: impact20 / no basis filter / vol10% (t-1) / OI10% (prev hour) / de-risk on,1y,1430.0,2160.6,438.6,-892.1,-277.2,20.43,76.9,1860.0,1477,24.1
+impact,impact 10bp,1y,1755.2,2116.2,466.8,-540.8,-287.0,25.07,111.7,1571.0,1728,28.95
+impact,impact 20bp,1y,1430.0,2160.6,438.6,-892.1,-277.2,20.43,76.9,1860.0,1477,24.1
+impact,impact 30bp,1y,1090.3,2172.4,432.6,-1241.8,-272.9,15.58,56.7,1923.0,1338,19.2
+basis_filter,no basis filter,1y,1430.0,2160.6,438.6,-892.1,-277.2,20.43,76.9,1860.0,1477,24.1
+basis_filter,entry basis <= 0bp,1y,1446.4,2152.6,445.0,-878.3,-272.8,20.66,78.4,1846.0,1469,24.35
+basis_filter,entry basis <= -20bp,1y,1597.7,2020.5,509.0,-710.7,-221.2,22.82,120.1,1331.0,1493,26.87
+basis_filter,entry basis <= -38bp,1y,1683.4,1861.3,533.1,-542.1,-168.9,24.05,202.1,833.0,1407,28.45
+basis_filter,entry basis <= -60bp,1y,1721.7,1693.9,571.4,-414.4,-129.2,24.6,333.6,516.0,1288,29.23
+oi_limit,OI limit off,1y,1759.0,2710.2,514.6,-1116.3,-349.5,25.13,85.9,2048.0,1463,28.67
+oi_limit,OI limit 2% of prev-hour OI,1y,767.3,975.4,207.3,-317.4,-97.9,10.96,88.9,863.0,1597,15.35
+oi_limit,OI limit 5% of prev-hour OI,1y,1180.0,1659.2,337.1,-623.3,-193.0,16.86,78.6,1501.0,1521,20.78
+oi_limit,OI limit 10% of prev-hour OI,1y,1430.0,2160.6,438.6,-892.1,-277.2,20.43,76.9,1860.0,1477,24.1
+oi_limit,OI limit 20% of prev-hour OI,1y,1653.1,2545.3,510.2,-1068.5,-333.8,23.62,82.4,2005.0,1466,27.18
+oi_granularity,"OI limit 10% of previous-UTC-day OI (v4 daily, for comparison)",1y,1050.3,1878.8,317.2,-873.9,-271.9,15.0,58.7,1791.0,1461,18.72
+oi_staleness,hourly OI made 6h staler (diagnostic: OI of hour t-1-6),1y,1138.0,2077.6,370.6,-999.0,-311.2,16.26,61.5,1851.0,1457,19.94
+oi_staleness,hourly OI made 12h staler (diagnostic: OI of hour t-1-12),1y,1084.4,2010.8,343.0,-967.7,-301.6,15.49,59.5,1824.0,1461,19.19
+oi_staleness,hourly OI made 24h staler (diagnostic: OI of hour t-1-24),1y,918.4,1849.8,276.9,-921.2,-287.0,13.12,51.2,1794.0,1445,16.84
+vol_limit,volume limit off,1y,1843.5,2461.2,390.1,-768.7,-239.1,26.34,54.5,3385.0,1719,28.92
+vol_limit,volume limit 5% of trailing-24h,1y,1120.1,1827.9,420.8,-861.2,-267.4,16.0,90.9,1233.0,1391,20.12
+vol_limit,volume limit 10% of trailing-24h,1y,1430.0,2160.6,438.6,-892.1,-277.2,20.43,76.9,1860.0,1477,24.1
+vol_limit,volume limit 20% of trailing-24h,1y,1656.0,2343.6,417.4,-842.8,-262.2,23.66,67.4,2458.0,1604,26.9
+derisk,no de-risk while holding,1y,2038.3,2540.0,366.2,-662.2,-205.7,29.12,62.2,3275.0,1775,31.78
+entry_threshold,entry 8h-rate magnitude > 5bp,1y,927.6,2302.3,428.5,-1376.3,-426.9,13.25,33.0,2808.0,1653,16.25
+entry_threshold,entry 8h-rate magnitude > 10bp,1y,1430.0,2160.6,438.6,-892.1,-277.2,20.43,76.9,1860.0,1477,24.1
+entry_threshold,entry 8h-rate magnitude > 20bp,1y,1580.6,1861.9,475.8,-577.1,-180.0,22.58,173.9,909.0,1282,26.93
+entry_threshold,entry 8h-rate magnitude > 50bp,1y,1537.4,1518.0,439.4,-320.1,-100.0,21.96,351.0,438.0,913,26.65
+exit_wait,max wait after rate turns 0h,1y,1175.8,2020.1,518.9,-1039.8,-323.4,16.8,157.1,748.0,3111,21.26
+exit_wait,max wait after rate turns 24h,1y,1316.9,2085.2,468.0,-943.3,-293.0,18.81,129.9,1014.0,2200,23.09
+exit_wait,max wait after rate turns 168h,1y,1430.0,2160.6,438.6,-892.1,-277.2,20.43,76.9,1860.0,1477,24.1
+haircut_illustration,funding x1.0 (illustration only: no evidence for any haircut),1y,1430.0,2160.6,438.6,-892.1,-277.2,20.43,76.9,1860.0,1477,24.1
+haircut_illustration,funding x0.8 (illustration only: no evidence for any haircut),1y,997.8,1728.5,438.6,-892.1,-277.2,14.25,53.6,1860.0,1477,17.93
+haircut_illustration,funding x0.6 (illustration only: no evidence for any haircut),1y,565.7,1296.4,438.6,-892.1,-277.2,8.08,30.4,1860.0,1477,11.75
+base,BASE: impact20 / no basis filter / vol10% (t-1) / OI10% (prev hour) / de-risk on,6m,401.7,604.5,137.1,-259.6,-80.3,11.64,85.7,950.0,602,15.96
+impact,impact 10bp,6m,504.8,605.7,138.9,-157.2,-82.6,14.62,134.5,761.0,660,19.08
+impact,impact 20bp,6m,401.7,604.5,137.1,-259.6,-80.3,11.64,85.7,950.0,602,15.96
+impact,impact 30bp,6m,299.3,605.2,135.7,-362.3,-79.3,8.67,61.8,982.0,561,12.97
+basis_filter,no basis filter,6m,401.7,604.5,137.1,-259.6,-80.3,11.64,85.7,950.0,602,15.96
+basis_filter,entry basis <= 0bp,6m,404.4,603.6,137.2,-256.9,-79.5,11.71,87.0,943.0,604,16.04
+basis_filter,entry basis <= -20bp,6m,466.2,576.6,166.7,-211.6,-65.5,13.51,135.7,697.0,594,18.01
+basis_filter,entry basis <= -38bp,6m,500.7,531.0,173.8,-155.9,-48.2,14.5,234.7,433.0,528,19.2
+basis_filter,entry basis <= -60bp,6m,521.9,500.6,176.6,-118.6,-36.7,15.12,358.4,295.0,448,19.91
+oi_limit,OI limit off,6m,535.4,776.1,182.3,-322.4,-100.6,15.51,103.9,1045.0,600,19.76
+oi_limit,OI limit 2% of prev-hour OI,6m,191.7,253.1,57.7,-91.1,-28.0,5.55,92.2,422.0,619,10.25
+oi_limit,OI limit 5% of prev-hour OI,6m,306.9,448.7,98.5,-183.7,-56.6,8.89,81.0,768.0,613,13.34
+oi_limit,OI limit 10% of prev-hour OI,6m,401.7,604.5,137.1,-259.6,-80.3,11.64,85.7,950.0,602,15.96
+oi_limit,OI limit 20% of prev-hour OI,6m,490.3,709.3,176.9,-302.1,-93.8,14.2,98.2,1013.0,601,18.48
+oi_granularity,"OI limit 10% of previous-UTC-day OI (v4 daily, for comparison)",6m,308.1,518.4,120.1,-252.3,-78.1,8.93,67.8,921.0,594,13.27
+oi_staleness,hourly OI made 6h staler (diagnostic: OI of hour t-1-6),6m,339.4,578.1,130.5,-281.9,-87.3,9.83,72.8,945.0,599,14.16
+oi_staleness,hourly OI made 12h staler (diagnostic: OI of hour t-1-12),6m,330.5,561.9,130.1,-275.9,-85.5,9.57,71.4,939.0,596,13.9
+oi_staleness,hourly OI made 24h staler (diagnostic: OI of hour t-1-24),6m,260.6,506.1,99.4,-263.3,-81.6,7.55,57.6,918.0,593,11.89
+vol_limit,volume limit off,6m,515.1,693.9,121.6,-229.4,-71.0,14.92,62.8,1664.0,626,18.73
+vol_limit,volume limit 5% of trailing-24h,6m,321.7,505.6,136.2,-244.6,-75.6,9.32,107.3,608.0,585,13.89
+vol_limit,volume limit 10% of trailing-24h,6m,401.7,604.5,137.1,-259.6,-80.3,11.64,85.7,950.0,602,15.96
+vol_limit,volume limit 20% of trailing-24h,6m,469.2,663.0,133.6,-250.0,-77.3,13.59,77.4,1229.0,615,17.72
+derisk,no de-risk while holding,6m,568.4,721.0,114.1,-203.8,-62.9,16.46,70.9,1626.0,635,20.3
+entry_threshold,entry 8h-rate magnitude > 5bp,6m,243.8,636.5,130.2,-399.2,-123.6,7.06,32.3,1532.0,778,10.97
+entry_threshold,entry 8h-rate magnitude > 10bp,6m,401.7,604.5,137.1,-259.6,-80.3,11.64,85.7,950.0,602,15.96
+entry_threshold,entry 8h-rate magnitude > 20bp,6m,476.9,531.8,159.2,-163.5,-50.6,13.81,218.7,442.0,479,18.5
+entry_threshold,entry 8h-rate magnitude > 50bp,6m,491.6,470.4,150.6,-98.8,-30.6,14.24,445.1,224.0,323,19.08
+exit_wait,max wait after rate turns 0h,6m,382.3,593.0,170.7,-291.3,-90.1,11.08,170.9,454.0,931,15.75
+exit_wait,max wait after rate turns 24h,6m,384.5,598.8,140.8,-271.3,-83.9,11.14,132.3,589.0,762,15.72
+exit_wait,max wait after rate turns 168h,6m,401.7,604.5,137.1,-259.6,-80.3,11.64,85.7,950.0,602,15.96
+haircut_illustration,funding x1.0 (illustration only: no evidence for any haircut),6m,401.7,604.5,137.1,-259.6,-80.3,11.64,85.7,950.0,602,15.96
+haircut_illustration,funding x0.8 (illustration only: no evidence for any haircut),6m,280.8,483.6,137.1,-259.6,-80.3,8.14,59.9,950.0,602,12.46
+haircut_illustration,funding x0.6 (illustration only: no evidence for any haircut),6m,159.9,362.7,137.1,-259.6,-80.3,4.63,34.1,950.0,602,8.95

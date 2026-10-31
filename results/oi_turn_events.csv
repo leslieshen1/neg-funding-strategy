@@ -1,0 +1,7 @@
+definition,events,events_with_oi,median_oi_change_6h_pct,share_up_pct
+STRICT: event rate < 0 and previous event rate >= 0 (primary),43092,43082,-0.68,38.6
+event rate < -1bp and previous event rate >= 0,19124,19118,-0.58,40.73
+event rate < -5bp and previous event rate >= 0,2840,2837,2.02,62.57
+event rate < -10bp and previous event rate >= 0,1189,1186,17.61,82.46
+"STRICT, at most one event per coin per UTC day",34820,34815,-0.68,38.54
+BASELINE: all coin-hours of the pool (6h OI change),2298939,2298939,-0.24,45.69
